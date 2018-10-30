@@ -10,6 +10,8 @@
     <modules>
         <module>microservicesapi</module>
         <module>microserviceproviderdept8081</module>
+        <module>microserviceconsumerdept80</module>
+        <module>microserviceconsumerdept80</module>
     </modules>
     <packaging>pom</packaging>
 
