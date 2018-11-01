@@ -12,6 +12,10 @@
         <module>microserviceproviderdept8081</module>
         <module>microserviceconsumerdept80</module>
         <module>microserviceconsumerdept80</module>
+        <module>microserviceconsumerdept80</module>
+        <module>microservicecloudeureka7001</module>
+        <module>microserviceconsumerdeptfegin</module>
+        <module>micoserviceproviderdept8001</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -72,5 +76,26 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <!--构建项目-->
+    <build>
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimit>$</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
